@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+        var nome_do_carro = "fusca"
+        alert ("fusca")
+
+        // Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nome = prompt("digite seu nome")
+        alert ("ola," + " " + nome)
+
+        // Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário.
+        //  Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var nome =prompt("ola, qual é seu nome ?")
+        var idade =prompt(" qual sua idade?")
+        alert (nome + " " + "sua idade é" + " " + idade  )
+
+        // Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas.
+        // O usuário irá informar os valores de cada variável.
+
+        var a= prompt("valor da base")
+        var b= prompt("valor da altura")
+        var retangulo= a*b
+        alert (retangulo + " " + "esta é área do seu retângulo")
+
+        var a=prompt("informe um lado")        
+        var b=prompt("informe o outro lado")
+        var quadrado= a*b 
+        alert ("a soma da área é igual" + " " + quadrado + "^2")
+
+
+        var a= prompt("valor da diagonal maior") 
+        var b= prompt("valor da diagonal menor")
+        var losango= (a*b) /2;
+        alert ("área do seu losango é" + " " + losango)
+
+        var a= parseFloat(prompt("informe a base maior"))
+        var b= parseFloat(prompt("informe a base menor"))
+        var c= parseFloat(prompt("agora altura"))
+        var trapezio = ( a + b ) * c /2;
+        alert ("seu trápezio tem área de" + " " + trapezio)
+
+        var a= prompt("para calcular o paralelogramo, informe a base")
+        var b= prompt("agora a altura")
+        var paralelograma= (a*b)
+        alert (paralelograma + " " + "essa é área do paralelogramo")
+
+        var a= parseFloat(prompt("informe a base do triângulo"))
+        var b= parseFloat(prompt("informe a altura"))
+        var triangulo= (a*b) /2;
+        alert ("a área do triângulo é" + " " + triangulo)
+
+        var a= prompt("π.r² é formula para calcular a área, com π tendo valor fixo, informe o raio ")
+        var expoente = 2
+        var circulo= 3.14 * a**expoente;
+        alert ("isso" + " " + circulo)
+    
+    </script>
+</body>
+</html>

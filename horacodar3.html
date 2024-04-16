@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1 - Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
+ 
+        var n1 = parseInt(prompt("informe um valor"))
+        var n2 = parseInt(prompt("informe outro valor"))
+         
+        if (n2 <= 0) {
+         nn2 = parseInt(prompt("Informe um novo valor"));
+         alert ("valores informados" + " " + n1 + " " + nn2);
+        } 
+
+        else {
+        alert ("valores informados" + " " + n1 + " " + n2);
+        }
+    
+
+// 2 - Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
+
+        var inicio = 30
+        var explosão = 0
+
+        while (inicio > 0) {
+        document.write("vamos de arrasta em" + " " + inicio + "<br>");
+        inicio--; 
+        }
+        document.write ("explosion!");
+
+
+
+
+
+// 3 - Escreva um algoritmo para os números de 1 (inclusive) a 10 (inclusive) em ordem decrescente.
+// Exemplo: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+
+            var a = 10
+
+            
+            while (a > 0) {
+            alert ("o fim chegam em" + a );
+            a--;
+            }
+            alert ("explosão!")
+
+
+
+
+// 4 - Faça um algoritmo que calcule e escreva a média aritmética dos números inteiros entre 15 (inclusive) e 100 (inclusive).
+
+let i = 100
+
+for (let soma = 15; 15 < i; soma ++ /75)
+
+
+
+ alert ("A média aritmética dos números inteiros entre 15 e 100 é:", soma);
+ console.log("A média aritmética dos números inteiros entre 15 e 100 é:", media);
+
+
+
+// 5 - Faça um algoritmo que calcule e escreva a média aritmética dos dois números inteiros informados pelo usuário e todos os números inteiros entre eles. 
+// Considere que o primeiro sempre será menor que o segundo.
+
+var menor = parseInt(prompt("informe um numero"));
+var maior = parseInt(prompt("informe outro número"));
+
+let media = menor + maior /2
+
+// for (meio = informado1; informado1 < informado2; soma ++){
+//     alert ("numero ao meio dos numeros informados")
+// }
+
+alert (media)
+
+
+
+
+
+
+
+// 6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+// criar um codigo que diga se aluno passou de ano ou reprovou, criar uma mensagem se deseja continuar adionando notas, ou mostrar alunos reprovados
+
+        
+        
+
+
+// 7 - Escreva um algoritmo para ler as notas de avaliações de um aluno, calcule e imprima a média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada nota. São 6 notas ao total.
+// Caso o valor informado para qualquer uma das notas esteja fora do limite estabelecido, deve ser solicitado um novo valor ao usuário. 
+
+
+
+
+
+
+
+
+// 8 - Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere que o N será sempre maior que ZERO.
+// N  é um valor informado pelo usuário
+
+let n = parseInt(prompt("informe um valor"))
+
+for (let i = 0; i < n; i ++) {
+    console.log (i + " " + "numeros anteriores")
+}
+    console.log (n + " " + "esté é numero informado");
+
+    
+
+
+    
+
+
+
+// 9 - Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
+
+
+
+// 10 - Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
+
+
+
+// 11 - Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+
+
+    </script>
+</body>
+</html>

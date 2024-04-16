@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     // 1 - Crie um programa onde o usuário possa cadastrar estudantes sem limites, e, em seguida, Se o usuário digitar "PARE" o 
+    // programa deve exibir a quantidade de estudantes cadastrados e a lista com cada um deles. 
+        
+
+        
+    let alunos = []; 
+    let cadastros = true; 
+
+    function cadastro() {
+    console.log(alunos.length + " alunos cadastrados: " + alunos.join(", "));
+}
+
+    while (cadastros) {
+    let DadoDoAluno = prompt("Informe o nome do aluno a ser cadastrado, digite 'PARE' caso queira finalizar");
+
+    if (DadoDoAluno.toUpperCase() === "PARE") {
+        cadastros = false; 
+        console.log (alunos); 
+    } else {
+        alunos.push(DadoDoAluno + alunos);
+    }
+}
+
+    cadastro ()
+
+    // 2- Crie uma array de planetas que inclua "Terra", "Marte", "Plutão", "Vênus", "Júpiter", "Saturno"  e, em seguida, peça ao usuário para digitar o nome de um planeta. 
+    // Verifique se o planeta que o usuário informou está na array e informe ao usuário.
+      
+    
+        const planetas = [ "terra", "marte", "plutão", "vênus", "júpiter", "saturno"]
+        console.log (planetas)
+
+        let planetainformado = prompt("digite nome de um planeta")
+
+        if (planetas.includes(planetainformado)) {
+            console.log("planeta informado" + " " + "está incluido na lista")
+
+        }
+        else {
+            console.log (planetainformado + " " + "não aparece na lista")
+        }
+
+
+//         Vamos criar uma lista de compras. 
+
+// 3 -Crie uma array de frutas, exiba-a ao usuário e, em seguida, peça ao usuário para digitar o nome de uma das frutas.
+
+// Caso a fruta esteja no array, remova-a e exiba a mensagem "Fruta foi retirada da lista". 
+
+// Peça novamente para o usuário digitar o nome de uma fruta para ser removida. 
+
+// Sempre que o usuário procurar por uma fruta que não está no array exiba a mensagem "Fruta indisponível no nosso mercado". 
+
+// Quando o array não possuir mais itens dentro de si, escreva "Lista de compras finalizada".
+
+let lista = ["banana", "maçã", "abacaxi", "abacate"];
+
+function mostrarLista() {
+    alert("Itens da lista: " + lista);
+}
+
+mostrarLista();
+
+while (lista.length > 0) {
+    let novo = prompt("Digite o nome de um item da lista");
+
+    // Verifica se o item digitado está na lista
+    let index = lista.indexOf(novo);
+
+    if (index !== -1) {
+        lista.splice(index, 1); // Remove o item da lista
+            console.log(novo + " " + "foi encontrado e removido da lista");
+            console.log(lista)
+    } else {
+            console.log("Produto não disponível em nosso mercado");
+    }
+
+    mostrarLista();
+}
+
+// Quando todos os itens foram retirados da lista, encerra o programa
+console.log("Todos os itens foram retirados da lista.");
+
+
+
+
+
+    </script>
+</body>
+</html>
